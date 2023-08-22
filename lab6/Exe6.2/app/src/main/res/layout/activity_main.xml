@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Nội dung ở đây"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btnReadInternal"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Đọc internal"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
+
+        <Button
+            android:id="@+id/btnReadExternal"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Đọc external"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btnWriteInternal"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Ghi internal"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
+
+        <Button
+            android:id="@+id/btnWriteExternal"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Ghi external"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtInternalFilePath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txtExternalFilePath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
